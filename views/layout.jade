@@ -2,6 +2,9 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='/vendor/bootstrap/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+  include includes/header
   body
     block content
+  block scripts

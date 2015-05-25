@@ -3,6 +3,26 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+/*body h1 {
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}*/
+
+.navbar-nav li a {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.navbar {
+  background-color: rgba(0,0,0,0.6);
+  min-height: 50px !important;   
+
+}
+img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);	
 }
