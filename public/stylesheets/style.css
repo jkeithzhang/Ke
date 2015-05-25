@@ -2,13 +2,6 @@ body {
   /*padding: 50px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
-/*body h1 {
-  font-size: 30px;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}*/
 .navbar {
   background-color: rgba(0,0,0,0.6);
   min-height: 50px;   
@@ -26,11 +19,75 @@ nav a {
   max-width: 100%;
   padding-left: 20%;
   padding-right: 20%;
+  font-family: Serif;
 }
 img {
+  width: 10%;
   position: fixed;
-  top: 50%;
+  top: 25%;
   left: 50%;
-  /* bring your own prefixes */
+   /*bring your own prefixes */
+  transform: translate(-50%, -50%); 
+}
+hr {
+  width: 80%; 
+  color: #987cb9;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  /*bring your own prefixes */
+  transform: translate(-50%, -50%); 
+}
+.center-block {
+  width: 50%;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  right: 50%;
+  padding: 20px;
+   /*bring your own prefixes */
   transform: translate(-50%, -50%);	
 }
+
+/*LINE ON SIDES: https://css-tricks.com/line-on-sides-headers/*/
+.center-block h1 {
+  text-align: center;
+  color: gray;
+  font-size: 2em;
+  font-weight: 100;
+}
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before, .fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #987cb9;
+  top: 0;
+  width: 30%;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+.description {
+  padding-top: 20px;
+  font: 0.6em Serif;
+  text-align: justify;
+}
+.description p {
+  padding-top: 20px;
+  text-align: center;
+}
+/*END LINE ON SIDES*/
+
