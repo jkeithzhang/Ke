@@ -23,7 +23,7 @@ nav a {
   font-family: Serif;
 }
 .profile-pic {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .profile-pic .row .col-lg-12 img {
   width: 20%;
@@ -34,11 +34,8 @@ nav a {
 hr {
   width: 80%; 
   color: #987cb9;
-  /*position: fixed;*/
   top: 350px;
   left: 50%;
-  /*bring your own prefixes */
-  /*transform: translate(-50%, -50%); */
 }
 .center-block {
   width: 50%;
@@ -46,6 +43,7 @@ hr {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
 }
 /*LINE ON SIDES: https://css-tricks.com/line-on-sides-headers/*/
 .center-block h1 {
@@ -88,15 +86,27 @@ hr {
   text-align: center;
 }
 /*END LINE ON SIDES*/
+
+/*CAROUSEL CUSTOMIZE*/
 .carousel {
   width: 100%;
   margin-top: 20px;
   min-height: 500px;
   max-height: 500px;
+  margin-bottom: 200px;
 }
 .carousel-inner .item img {
   margin:0 auto;
 }
+.carousel-indicators li {
+  border: black;
+  background-color: rgba(215,201,201,1);
+}
+.carousel-indicators .active {
+  background-color: black;
+}
+/*END CAROUSEL CUSTOMIZE*/
+
 .foot {
   margin-top: 100px;
 }

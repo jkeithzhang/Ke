@@ -8,37 +8,74 @@ block content
 			a.col-md-2 idk3
 			a.col-md-2 idk4
 			a.col-md-2 idk5
-			a.col-md-2 idk6
-	.container.profile-pic
-		.row
-			.col-lg-12
-				img(src="images/profile.jpg")
-	hr
+			a.col-md-2 idk6	
 	.center-block
 		h1.fancy 
 			span ABOUT ME
 			.description
-				p Ke is a passionate software developer who is fueled by the idea of designing and creating.			
-	
-	.carousel.slide(data-ride="carousel" id="carousel-example-generic")
+				p Ke is a passionate software developer who is fueled by the idea of designing and creating.
+	.container.profile-pic
+		.row
+			.col-lg-12
+				img(src="images/profile.jpg")
+	hr			
+	.center-block
+		h1.fancy 
+			span VENTUS
+
+	.carousel.slide(data-ride="carousel" id="carousel1")
 		ol.carousel-indicators
-			li.active(data-target="#carousel-example-generic" data-slide-to="0")
-			li(data-target="#carousel-example-generic" data-slide-to="1")
-			li(data-target="#carousel-example-generic" data-slide-to="2")
+			li.active(data-target="#carousel1" data-slide-to="0")
+			li(data-target="#carousel1" data-slide-to="1")
+			li(data-target="#carousel1" data-slide-to="2")
+			li(data-target="#carousel1" data-slide-to="3")
 		.carousel-inner(role="listbox")
 			.item.active
-				img(src="images/test2.jpg")
-				.carousel-caption ...
+				img(src="images/ventus1.jpg")
+				//- .carousel-caption ...
 			.item
-				img(src="images/test2.jpg")
-				.carousel-caption ...
+				img(src="images/ventus2.jpg")
+				//- .carousel-caption ...
 			.item
-				img(src="images/test2.jpg")
-				.carousel-caption ...
-		a.left.carousel-control(href="#carousel-example-generic" role="button" data-slide="prev")
+				img(src="images/ventus3.jpg")
+				//- .carousel-caption ...
+			.item
+				img(src="images/ventus4.jpg")
+				//- .carousel-caption ...
+		a.left.carousel-control(href="#carousel1" role="button" data-slide="prev")
 			span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
 			span.sr-only Previous
-		a.right.carousel-control(href="#carousel-example-generic" role="button" data-slide="next")
+		a.right.carousel-control(href="#carousel1" role="button" data-slide="next")
+			span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+			span.sr-only Next
+	hr
+	.center-block
+		h1.fancy 
+			span TS HELPER
+
+	.carousel.slide(data-ride="carousel" id="carousel2")
+		ol.carousel-indicators
+			li.active(data-target="#carousel2" data-slide-to="0")
+			li(data-target="#carousel2" data-slide-to="1")
+			li(data-target="#carousel2" data-slide-to="2")
+			li(data-target="#carousel2" data-slide-to="3")
+		.carousel-inner(role="listbox")
+			.item.active
+				img(src="images/ventus1.jpg")
+				//- .carousel-caption ...
+			.item
+				img(src="images/ventus2.jpg")
+				//- .carousel-caption ...
+			.item
+				img(src="images/ventus3.jpg")
+				//- .carousel-caption ...
+			.item
+				img(src="images/ventus4.jpg")
+				//- .carousel-caption ...
+		a.left.carousel-control(href="#carousel2" role="button" data-slide="prev")
+			span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+			span.sr-only Previous
+		a.right.carousel-control(href="#carousel2" role="button" data-slide="next")
 			span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
 			span.sr-only Next
 	.foot
