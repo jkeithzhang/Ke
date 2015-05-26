@@ -1,5 +1,6 @@
 body {
   /*padding: 50px;*/
+  width: 100%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 .navbar {
@@ -21,34 +22,31 @@ nav a {
   padding-right: 20%;
   font-family: Serif;
 }
-img {
-  width: 10%;
-  position: fixed;
-  top: 25%;
-  left: 50%;
-   /*bring your own prefixes */
-  transform: translate(-50%, -50%); 
+.profile-pic {
+  margin-top: 100px;
+}
+.profile-pic .row .col-lg-12 img {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 hr {
   width: 80%; 
   color: #987cb9;
-  position: fixed;
-  top: 35%;
+  /*position: fixed;*/
+  top: 350px;
   left: 50%;
   /*bring your own prefixes */
-  transform: translate(-50%, -50%); 
+  /*transform: translate(-50%, -50%); */
 }
 .center-block {
   width: 50%;
-  position: fixed;
-  top: 45%;
-  left: 50%;
-  right: 50%;
-  padding: 20px;
-   /*bring your own prefixes */
-  transform: translate(-50%, -50%);	
+  margin-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 /*LINE ON SIDES: https://css-tricks.com/line-on-sides-headers/*/
 .center-block h1 {
   text-align: center;
@@ -90,4 +88,17 @@ hr {
   text-align: center;
 }
 /*END LINE ON SIDES*/
-
+.carousel {
+  width: 100%;
+  margin-top: 20px;
+  min-height: 500px;
+  max-height: 500px;
+}
+.carousel-inner .item img {
+  margin:0 auto;
+}
+.foot {
+  margin-top: 100px;
+}
+  bottom: 0px;
+}
