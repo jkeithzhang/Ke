@@ -10,16 +10,21 @@ body {
   padding-bottom: 10px;
   width: 100%;
 }
-nav a {
+nav .im-centered {
+  width: 100%;
+  text-align: center;
+}
+nav .im-centered .col-md-3 a {
   color: white;
   font-size: 15px;
 }
+nav .im-centered .col-md-3 a:hover {
+  color: #29F7CF;
+  text-decoration: none;
+}
 .im-centered {
-  text-align: center;
   margin: auto;
   max-width: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
   font-family: Serif;
 }
 .profile-pic {
