@@ -14,7 +14,8 @@ block content
 	.center-block
 		h1 
 			.description
-				p Ke is a passionate software developer who is fueled by the idea of designing and creating.
+				//- p Ke is a passionate software developer who is fueled by the idea of designing and creating.
+				p Hello World! {{'yet' + '!'}}
 	.container.profile-pic
 		.row
 			.col-lg-12.col-xs-12
@@ -55,7 +56,7 @@ block content
 					img(src="images/ventus4.jpg" style="height: 100%;")
 					//- .carousel-caption ...
 				.item
-					img(src="images/ventus5.jpg" style="height: 100%;")
+					img(src="images/ventus5.jpg" style="height: auto; width: auto;")
 					//- .carousel-caption ...
 			a.left.carousel-control(href="#carousel1" role="button" data-slide="prev")
 				span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
@@ -94,7 +95,23 @@ block content
 	//- 		span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
 	//- 		span.sr-only Next
 	.foot
-		p helhelhelhelhelhelhelhelhelhelhelhelhelhelhelhelhelhelhelhelhelhelhelhelhelhel				
+		p LEAVE THIS SPACE FOR FOOTER				
 block scripts
-	script(src='vendor/freelancer/js/jquery-1.11.0.js')
-	script(src='vendor/bootstrap/js/bootstrap.min.js')
+	script(src='/vendor/freelancer/js/jquery-1.11.0.js')
+	script(src='/vendor/bootstrap/js/bootstrap.min.js')
+	script(src='/vendor/angular/angular.min.js')
+	script(src='/vendor/angular-route/angular-route.min.js')
+
+	//- app
+	script(src='/javascripts/apps/_module.js')
+	script(src='/javascripts/apps/Ke-app.js')
+
+	//- controller
+	script(src='/javascripts/controllers/_module.js')
+	script(src='/javascripts/controllers/Ke-controller.js')
+
+	//- //- services
+	//- script(src='/javascripts/services/_module.js')	
+	//- script(src='/javascripts/services/Ke-service.js')
+
+
