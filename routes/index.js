@@ -6,5 +6,11 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Ke' });
 });
 
+//partials
+router.get('/partials/:name', function (req, res) {
+    var name = req.params.name;
+    res.render('partials/' + name, { title: 'MMS v1.0' });
+});
+
 
 module.exports = router;

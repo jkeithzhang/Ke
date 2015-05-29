@@ -2,14 +2,11 @@ angular.module('KeApp')
 	.config(['$routeProvider', 
 		function($routeProvider) {
 			$routeProvider
-				.when('/', {
-					
+				.when('/test', {
+					templateUrl: 'partials/why',
+					controller: 'testController',
+					public: true
 				})
-				.when('/parts', {
-					templateUrl: '../partials/parts', 
-					controller: 'sshLinkCtrl',
-					login: true	
-				})
-				.otherwise({ redirectTo: '/loadNodes/free'});
+				.otherwise({ redirectTo: '/free'});
 		}
 	]);
