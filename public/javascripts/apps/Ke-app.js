@@ -7,6 +7,6 @@ angular.module('KeApp')
 					controller: 'testController',
 					public: true
 				})
-				.otherwise({ redirectTo: '/free'});
+				.otherwise({ redirectTo: '/'});
 		}
 	]);

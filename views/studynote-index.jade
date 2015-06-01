@@ -1,0 +1,33 @@
+extends layout
+
+block content
+	nav.navbar.navbar-fixed-top
+		.im-centered
+			.col-md-3.col-xs-3
+				a(href="studynote") Study Notes
+			.col-md-3.col-xs-3
+				a(href="/images/KeZhang_resume.pdf" target="_blank") CV
+			.col-md-3.col-xs-3 
+				a Life
+			.col-md-3.col-xs-3 
+				a About
+	.center-block			
+block scripts
+	script(src='/vendor/freelancer/js/jquery-1.11.0.js')
+	script(src='/vendor/bootstrap/js/bootstrap.min.js')
+	script(src='/vendor/angular/angular.min.js')
+	script(src='/vendor/angular-route/angular-route.min.js')
+
+	//- app
+	script(src='/javascripts/apps/_module.js')
+	script(src='/javascripts/apps/Ke-app.js')
+
+	//- controller
+	script(src='/javascripts/controllers/_module.js')
+	script(src='/javascripts/controllers/Ke-controller.js')
+
+	//- //- services
+	//- script(src='/javascripts/services/_module.js')	
+	//- script(src='/javascripts/services/Ke-service.js')
+
+
