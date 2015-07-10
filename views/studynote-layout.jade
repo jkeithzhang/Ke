@@ -1,0 +1,11 @@
+doctype html
+html(ng-app='StudynoteApp')
+  head
+    title= title
+    link(rel='stylesheet', href='/vendor/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/vendor/font-awesome-4.3.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/studynote-style.css')
+  include includes/header
+  body
+    block content
+  block scripts

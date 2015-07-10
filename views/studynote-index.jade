@@ -1,20 +1,20 @@
-extends layout
+extends studynote-layout
 
 block content
 	nav.navbar.navbar-fixed-top
 		.im-centered
+			.col-md-3.col-xs-3 
+				a(href="/") Home
 			.col-md-3.col-xs-3
-				a(href="/") Back
+				a(href="studynote") Study Notes
 			.col-md-3.col-xs-3
 				a(href="/images/KeZhang_resume.pdf" target="_blank") CV
 			.col-md-3.col-xs-3 
 				a Life
-			.col-md-3.col-xs-3 
-				a About
 	.center-block
 		
 	.foot
-		p LEAVE THIS SPACE FOR FOOTER			
+		p(style="color:white") LEAVE THIS SPACE FOR FOOTER			
 block scripts
 	script(src='/vendor/freelancer/js/jquery-1.11.0.js')
 	script(src='/vendor/bootstrap/js/bootstrap.min.js')
