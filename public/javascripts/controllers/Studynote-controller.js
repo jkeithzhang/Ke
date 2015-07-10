@@ -1,4 +1,4 @@
-angular.module('Ke-controller')
+angular.module('Studynote-controller')
 	.controller('testController', ['$scope',
 		function($scope) {
 			console.log('.....');

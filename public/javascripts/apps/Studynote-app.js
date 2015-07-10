@@ -1,4 +1,4 @@
-angular.module('KeApp')
+angular.module('StudynoteApp')
 	.config(['$routeProvider', 
 		function($routeProvider) {
 			$routeProvider

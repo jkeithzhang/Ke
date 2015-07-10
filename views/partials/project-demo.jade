@@ -1,0 +1,34 @@
+.center-block
+	h1.fancy 
+		span VENTUS
+.border
+	.carousel.slide(id="carousel1" data-interval="1000" data-ride="carousel")
+		ol.carousel-indicators
+			li.active(data-target="#carousel1" data-slide-to="0")
+			li(data-target="#carousel1" data-slide-to="1")
+			li(data-target="#carousel1" data-slide-to="2")
+			li(data-target="#carousel1" data-slide-to="3")
+			li(data-target="#carousel1" data-slide-to="4")
+		.carousel-inner(role="listbox")
+			.item.active
+				img(src="images/ventus1.jpg" style="height: auto; width: auto;")
+				//- .carousel-caption ...
+			.item
+				img(src="images/ventus2.jpg" style="height: 100%;")
+				//- .carousel-caption ...
+			.item
+				img(src="images/ventus3.jpg" style="height: 100%;")
+				//- .carousel-caption ...
+			.item
+				img(src="images/ventus4.jpg" style="height: 100%;")
+				//- .carousel-caption ...
+			.item
+				img(src="images/ventus5.jpg" style="height: auto; width: auto;")
+				//- .carousel-caption ...
+		a.left.carousel-control(href="#carousel1" role="button" data-slide="prev")
+			span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+			span.sr-only Previous
+		a.right.carousel-control(href="#carousel1" role="button" data-slide="next")
+			span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+			span.sr-only Next
+hr
