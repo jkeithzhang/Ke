@@ -1,6 +1,7 @@
 var KeApp = angular.module('KeApp', [
 	'ngRoute',
-	'Ke-controller'
+	'Ke-controller',
+	'ui.bootstrap'
 	// 'Ke-service'
 	// 'bookingFilter',
 	// 'bookingDirective',
