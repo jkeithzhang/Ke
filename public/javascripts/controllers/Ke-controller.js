@@ -1,6 +1,7 @@
 angular.module('Ke-controller')
 	.controller('testController', ['$scope',
 		function($scope) {
+			$scope.title = "VENTUS";
 			$scope.slides = [
 				{
 					image: 'images/ventus1.jpg'
