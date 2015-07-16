@@ -11,10 +11,10 @@ block content
 				a(href="/images/KeZhang_resume.pdf" target="_blank") CV
 			.col-md-3.col-xs-3 
 				a Life
-	.center-block
+	.center-block(ng-view)
 		
-	.foot
-		p(style="color:white") LEAVE THIS SPACE FOR FOOTER			
+	//- .foot
+	//- 	p(style="color:white") LEAVE THIS SPACE FOR FOOTER			
 block scripts
 	script(src='/vendor/freelancer/js/jquery-1.11.0.js')
 	script(src='/vendor/bootstrap/js/bootstrap.min.js')
@@ -25,7 +25,12 @@ block scripts
 	script(src='/vendor/chartjs/Chart.js')
 	script(src='/vendor/angular-chart/dist/angular-chart.min.js')
 
-	//- app gaigaigai
+	script(src='/vendor/createjs/EaselJS-0.8.1/lib/easeljs-0.8.1.min.js')
+	script(src='/vendor/createjs/TweenJS-0.6.1/lib/tweenjs-0.6.1.min.js')
+	script(src='/vendor/createjs/PreloadJS-0.6.1/lib/preloadjs-0.6.1.min.js')
+	script(src='/vendor/createjs/SoundJS-0.6.1/lib/soundjs-0.6.1.min.js')
+	
+	//- app
 	script(src='/javascripts/apps/Studynote-app-module.js')
 	script(src='/javascripts/apps/Studynote-app.js')
 
