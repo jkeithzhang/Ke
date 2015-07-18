@@ -51,8 +51,14 @@ nav .im-centered .col-md-3 a:hover {
   max-width: 100%;
   font-family: Serif;
 }
+.left-block {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;  
+  display: block; 
+}
 .center-block {
-  width: 100%;
+  /*width: 100%;*/
   margin-top: 80px;
   display: block;
   margin-left: auto;
