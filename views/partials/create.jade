@@ -1,3 +1,18 @@
-.test(ng-init="init()")
-	p hello
-	canvas(id="demoCanvas" width="500" height="300")
+canvas.col-md-12(id="demoCanvas" width="300" height="200" ng-init="init()")
+//- canvas.col-md-12(id="haha" width="500" height="300")
+.row
+	.col-md-2.col-md-offset-5.col-xs-2.col-xs-offset-5
+		button
+			i.pe-7s-angle-up(style="font-size: 40px;")
+.row
+	.col-md-2.col-md-offset-4.col-xs-2.col-xs-offset-4
+		button
+			i.pe-7s-angle-left(style="font-size: 40px;")
+	.col-md-2.col-xs-2
+		button
+			i.pe-7s-angle-right(style="font-size: 40px;")
+	
+.row
+	.col-md-2.col-md-offset-5.col-xs-2.col-xs-offset-5
+		button
+			i.pe-7s-angle-down(style="font-size: 40px;")
