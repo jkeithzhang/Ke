@@ -9,9 +9,11 @@ angular.module('Studynote-controller')
 				stage.addChild(circle);
 				stage.update();
 			    $scope.moveUp = function() {
-			        circle.y -= 10;
+			        console.log(circle.y);
 			        //Will cause the circle to wrap back
-			        // if (circle.x > stage.canvas.width) { circle.x = 0; }
+			        if (circle.y > -70) { 
+			        	circle.y -= 10; 
+			        }
 			        stage.update();
 			    }
 			    $scope.moveDown = function() {

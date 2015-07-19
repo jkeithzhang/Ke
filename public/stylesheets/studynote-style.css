@@ -53,15 +53,21 @@ nav .im-centered .col-md-3 a:hover {
 }
 .left-block {
   margin-top: 80px;
-  margin-left: auto;
-  margin-right: auto;  
+/*  margin-left: auto;
+  margin-right: auto;  */
+  display: block; 
+}
+.right-block {
+  margin-top: 80px;
+/*  margin-left: auto;
+  margin-right: auto;*/  
   display: block; 
 }
 .center-block {
   /*width: 100%;*/
   margin-top: 80px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+/*  margin-left: auto;
+  margin-right: auto;*/
   margin-bottom: 60px;
 }
