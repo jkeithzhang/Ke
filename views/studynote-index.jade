@@ -12,8 +12,8 @@ block content
 			.col-md-3.col-xs-3 
 				a Life
 	
-	.left-block.col-md-3
-		
+	.left-block.col-md-3(ng-controller="testController")
+		my-customer(info="naomi")
 	.center-block.col-md-6
 	.right-block.col-md-3
 		
@@ -41,12 +41,8 @@ block scripts
 	//- controller
 	script(src='/javascripts/controllers/Studynote-controller-module.js')
 	script(src='/javascripts/controllers/Studynote-controller.js')
-
-	//- //- services
-	//- script(src='/javascripts/services/_module.js')	
-	//- script(src='/javascripts/services/Ke-service.js')
 	
 	//- directives
-	script(src='/javascripts/directives/_module.js')
-	script(src='/javascripts/directives/sigPanel.js')
+	script(src='/javascripts/directives/Studynote-directive-module.js')
+	script(src='/javascripts/directives/Studynote-directive.js')
 

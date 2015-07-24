@@ -34,8 +34,6 @@ angular.module('Studynote-controller')
 			        // if (circle.x > stage.canvas.width) { circle.x = 0; }
 			        stage.update();
 			    }
-
-
 				// createjs.Tween.get(circle, { loop: true })
 				//   .to({ x: 200 }, 1000, createjs.Ease.getPowInOut(4))
 				//   .to({ alpha: 0, y: 175 }, 500, createjs.Ease.getPowInOut(2))
@@ -51,6 +49,10 @@ angular.module('Studynote-controller')
 			 //    mystage.update();
 
 			}
+			$scope.naomi = {
+			  name: 'Naomi',
+			  address: '1600 Amphitheatre'
+			};
 		}
 	])
 	.controller('displayController', ['$scope',

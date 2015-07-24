@@ -1,6 +1,10 @@
 angular.module('Studynote-Directive')
-    .directive('testPanel', [function() {
-    	return {
-    		templateUrl:'partials/create'
-    	}
-    }]
+    .directive('myCustomer', function() {
+	    	return {
+	    		restrict: 'E',
+	    		scope: {
+	    			info: '='
+	    		},
+	    		templateUrl:'/partials/create'
+	    	};
+	})
