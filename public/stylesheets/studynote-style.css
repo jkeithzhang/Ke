@@ -46,11 +46,8 @@ nav .im-centered .col-md-3 a:hover {
   color: #29F7CF;
   text-decoration: none;
 }
-.im-centered {
-  margin: auto;
-  max-width: 100%;
-  font-family: Serif;
-}
+
+/* this is for game panel in future.*/
 .left-block {
   margin-top: 80px;
 /*  margin-left: auto;
@@ -71,3 +68,63 @@ nav .im-centered .col-md-3 a:hover {
   margin-right: auto;*/
   margin-bottom: 60px;
 }
+/* this is for game panel in future.*/
+
+.stage-block {
+  margin-top: 80px;
+/*  margin-left: auto;
+  margin-right: auto;  */
+  display: block; 
+}
+.rack {
+  /*border-radius: 25px;*/
+}
+.rack-title {
+  color: white;
+  text-align: center;
+  background-color: #ad9ee4;
+  border-radius: 3px;
+}
+.title-redundancy {
+  background-color: white;
+}
+.rack-title p {
+  padding-top: 5px;
+}
+.rack-body {
+  border: solid 0.5px;
+  margin-top: 20px;
+  margin-left: 15px;
+  -moz-box-shadow:    3px 3px 3px 0px #ccc;
+  -webkit-box-shadow: 3px 3px 3px 0px #ccc;
+  box-shadow:         3px 3px 3px 0px #ccc;
+  background-color: #f6f6f6;
+  /*transition-duration: 0.5s;*/
+  color: gray; 
+  /*border-radius: 5px;*/
+}
+.rack-body:hover {
+  -moz-box-shadow:    3px 3px 3px 3px #ccc;
+  -webkit-box-shadow: 3px 3px 3px 3px #ccc;
+  box-shadow:         3px 3px 3px 3px #ccc;
+  /*background-color: #efefef;*/
+}
+.rack-body:hover + .rack-title{
+  background-color: #99999;
+  /*background-color: #efefef;*/
+}
+.rack-body p {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
