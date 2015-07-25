@@ -79,6 +79,14 @@ nav .im-centered .col-md-3 a:hover {
 .rack {
   /*border-radius: 25px;*/
 }
+.rack:hover .rack-body{
+  -moz-box-shadow:    3px 3px 5px 2px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 2px #ccc;
+  box-shadow:         3px 3px 5px 2px #ccc;  
+}
+.rack:hover .rack-title{
+  background-color: #3366FF;
+}
 .rack-title {
   color: white;
   text-align: center;
@@ -103,19 +111,10 @@ nav .im-centered .col-md-3 a:hover {
   color: gray; 
   /*border-radius: 5px;*/
 }
-.rack-body:hover {
-  -moz-box-shadow:    3px 3px 3px 3px #ccc;
-  -webkit-box-shadow: 3px 3px 3px 3px #ccc;
-  box-shadow:         3px 3px 3px 3px #ccc;
-  /*background-color: #efefef;*/
-}
-.rack-body:hover + .rack-title{
-  background-color: #99999;
-  /*background-color: #efefef;*/
-}
-.rack-body p {
+.rack-body .text {
   padding-top: 30px;
   padding-left: 10px;
+  padding-bottom: 30px;
 }
 
 
