@@ -72,8 +72,8 @@ nav .im-centered .col-md-3 a:hover {
 
 .stage-block {
   margin-top: 80px;
-/*  margin-left: auto;
-  margin-right: auto;  */
+  margin-left: auto;
+  margin-right: auto;  
   display: block; 
 }
 .rack {

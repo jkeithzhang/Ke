@@ -3,6 +3,7 @@ var router = express.Router();
 
 var mongoose = require('mongoose');
 var user_collection = require('../models/Ke.js');
+var studynote_collection = require('../models/Ke.js');
 
 
 //study notes main page
@@ -17,7 +18,7 @@ router.get('/partials/:name', function (req, res) {
 });
 
 router.get('/test', function(req, res, next) {
-  user_collection.find({ 'name': "Yue Li" }, function (err, result) {
+  studynote_collection.find({ 'name': "Yue Li" }, function (err, result) {
     if (err) return next(err);
     res.json(result);
   });
