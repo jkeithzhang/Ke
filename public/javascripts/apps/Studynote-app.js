@@ -3,7 +3,7 @@ angular.module('StudynoteApp')
 		function($routeProvider) {
 			$routeProvider
 				.when('/', {
-					templateUrl: 'partials/create',
+					templateUrl: 'partials/studynote-main',
 					controller: 'testController',
 					public: true
 				})
