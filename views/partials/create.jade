@@ -17,7 +17,7 @@
 //- 	.col-md-2.col-md-offset-5.col-xs-2.col-xs-offset-5
 //- 		button(ng-click="moveDown()")
 //- 			i.pe-7s-angle-down(style="font-size: 40px;")
-.col-lg-4.rack
+.col-lg-4.rack(ng-controller="testController" ng-init="getContent()")
 	.col-md-12
 		.rack-title.col-md-6 
 			p Name: {{info.name}}

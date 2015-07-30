@@ -1,6 +1,7 @@
-var KeApp = angular.module('StudynoteApp', [
+var StudynoteApp = angular.module('StudynoteApp', [
 	'ngRoute',
 	'Studynote-controller',
+	'Studynote-service',
 	'Studynote-Directive'
 	// 'Ke-service'
 	// 'bookingFilter',

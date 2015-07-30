@@ -1,6 +1,6 @@
 angular.module('Studynote-controller')
-	.controller('testController', ['$scope',
-		function($scope) {
+	.controller('testController', ['$scope', 'Load',
+		function($scope, Load) {
 			// $scope.init = function() {
 			// 	// code here. 
 			// 	var stage = new createjs.Stage("demoCanvas");
@@ -49,6 +49,15 @@ angular.module('Studynote-controller')
 			//  //    mystage.update();
 
 			// }
+			$scope.getContent = function() {
+				Load.get()
+					.success(function(data) {
+						console.log(data);
+					})
+					.error(function(data) {
+						console.log("ERROR: " + data);
+					}) 
+			}
 			$scope.testDS = [
 				{
 					"name": "ke zhang",
