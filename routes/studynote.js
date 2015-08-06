@@ -2,8 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var mongoose = require('mongoose');
-// var user_collection = require('../models/Ke.js');
-var studynote_collection = require('../models/Ke.js');
+var studynote_collection = require('../models/Studynote-model.js');
 
 
 //study notes main page

@@ -8,7 +8,7 @@
 7 verbose unsafe-perm in lifecycle true
 8 info Ke@0.0.0 Failed to exec start script
 9 error Ke@0.0.0 start: `node ./bin/www`
-9 error Exit status 8
+9 error Exit status 1
 10 error Failed at the Ke@0.0.0 start script.
 10 error This is most likely a problem with the Ke package,
 10 error not with npm itself.

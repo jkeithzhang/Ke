@@ -24,6 +24,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+//DB
+require('./server/db.js')(mongoose);
+var studynote = require('./models/Studynote-model.js');
+
+
+//routes
 require('./routes/backend-route.js')(app);
 app.use('/', routes);
 app.use('/studynote', studynote_route);
@@ -59,18 +66,5 @@ app.use(function(err, req, res, next) {
   });
 });
 
-
-mongoose.connect('mongodb://localhost/Ke', function(err) {
-    if(err) {
-        console.log('----------------');
-        console.log('connection error');
-        console.log('----------------');
-    } else {
-        console.log('----------------------');
-        console.log('connection successful!');
-        console.log('----------------------');
-
-    }
-});
 
 module.exports = app;
