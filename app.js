@@ -27,11 +27,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //DB
 require('./server/db.js')(mongoose);
-var studynote = require('./models/Studynote-model.js');
+var SM = require('./models/Studynote-model.js');
 
 
 //routes
-require('./routes/backend-route.js')(app);
+require('./routes/backend-route.js')(app, SM);
 app.use('/', routes);
 app.use('/studynote', studynote_route);
 
