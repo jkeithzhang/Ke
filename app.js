@@ -25,15 +25,20 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+
+
+app.use('/studynote', studynote_route);
+app.use('/', routes);
+
 //DB
 require('./server/db.js')(mongoose);
 var SM = require('./models/Studynote-model.js');
 
-
 //routes
 require('./routes/backend-route.js')(app, SM);
-app.use('/', routes);
-app.use('/studynote', studynote_route);
+
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
