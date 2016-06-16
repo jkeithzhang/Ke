@@ -1,10 +1,21 @@
-.center-block
-	h1.fancy 
-		span {{title}}
-.border
-	div(style="height: auto")
-		carousel(interval="3000")
-			slide(ng-repeat="slide in slides" active="slide.active")
-				img(ng-src="{{slide.image}}" style="margin:auto;")
+div(style="background-color: white")
+	.center-block
+		h1.fancy 
+			span {{title1}}
+	.border
+		div(style="height: auto")
+			carousel(interval="3000")
+				slide(ng-repeat="slide in slides1" active="slide.active")
+					img(ng-src="{{slide.image}}" style="margin:auto;")
 
-	hr
+		hr
+	.center-block
+		h1.fancy 
+			span {{title2}}
+	.border
+		div(style="height: auto")
+			carousel(interval="3000")
+				slide(ng-repeat="slide in slides2" active="slide.active")
+					img(ng-src="{{slide.image}}" style="margin:auto;")
+
+		hr
