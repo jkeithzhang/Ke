@@ -1,7 +1,7 @@
 extends main-layout
 
 block content
-	#wrapper
+	#wrapper.background-image
 		nav.navbar.navbar-fixed-top
 			.im-centered
 				.col-md-3.col-xs-3 
@@ -15,15 +15,14 @@ block content
 		.space
 		.content
 			.center-block
-				h1 
-					.description
-						p Ke is a passionate software developer who is fueled by the idea of designing and creating.
+				.description
+					p Ke is a passionate software developer who is fueled by the idea of designing and creating.
 			.container.profile-pic
 				.row
 					.col-lg-12.col-xs-12
 						img(src="images/profile.jpg")
 					.col-md-8.col-xs-6
-					.col-md-4.col-xs-6
+					.col-md-4.col-xs-6.social-logo
 						a.btn.btn-social.btn-lg.btn-facebook.icon-customize(href="http://www.facebook.com/profile.php?id=100004410182145&fref=ts" target="_blank")
 							i.fa.fa-facebook
 						a.btn.btn-social.btn-lg.btn-linkedin.icon-customize(href="https://www.linkedin.com/profile/view?id=347236728&authType=NAME_SEARCH&authToken=rYL7&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2Cidx%3A2-1-2%2CtarId%3A1432703762797%2Ctas%3Ake" target="_blank")
@@ -32,12 +31,12 @@ block content
 							i.fa.fa-github
 						a.btn.btn-lg.icon-customize(href="mailto:zhangkecyrus@gmail.com")
 							i.fa.fa-envelope
-			hr
+			//- hr
 			.triangle-bottomleft
 			div(ng-view)
 			hr
-		.foot
-			p(style="color:white") LEAVE THIS SPACE FOR FOOTER				
+		//- .foot
+		//- 	p(style="color:white") LEAVE THIS SPACE FOR FOOTER				
 block scripts
 	script(src='/vendor/freelancer/js/jquery-1.11.0.js')
 	script(src='/vendor/bootstrap/js/bootstrap.min.js')

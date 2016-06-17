@@ -1,6 +1,11 @@
 html {
   background-color: rgba(0,0,0,0.6);
 }
+.background-image {
+  display: block;
+  background-image: url('../images/topper-background.jpg');
+  z-index: -1;
+}
 .space {
   min-height:20%;
   background-color: white
@@ -15,8 +20,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 #wrapper {
-  min-height:100%;
-  position:relative;
+  z-index: 1;
 }
 .content {
   padding-bottom:75px; /* Height of the footer element */
@@ -39,7 +43,13 @@ body {
   width: 100%;
 
 }
-.navbar:hover{
+.social-logo a {
+  color: white;
+}
+.social-logo a:hover {
+  color: #aaa;
+}
+.navbar:hover {
   background-color: #660033;
 }
 nav .im-centered {
@@ -61,9 +71,10 @@ nav .im-centered .col-md-3 a:hover {
 }
 .profile-pic {
   margin-top: 80px;
+  margin-bottom: 1000px;
 }
 .triangle-bottomleft {
-  height: 30%;
+  /*height: 500p;*/
   /*position: fixed;*/
   max-width: 100%;
   z-index: 99;
@@ -87,11 +98,18 @@ nav .im-centered .col-md-3 a:hover {
 hr {
   width: 80%; 
   color: #987cb9;
-  top: 350px;
+  /*top: 350px;*/
   left: 50%;
 }
+.pname {
+  color: white;
+  margin-bottom: 80px;
+}
+.pname h1 span{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
 .center-block {
-  width: 50%;
+  width: 60%;
   margin-top: 80px;
   display: block;
   margin-left: auto;
@@ -107,6 +125,7 @@ hr {
 }
 .fancy {
   line-height: 0.5;
+  margin: 0px;
   text-align: center;
 }
 .fancy span {
@@ -133,10 +152,15 @@ hr {
   padding-top: 20px;
   font: 0.6em Serif;
   text-align: justify;
+  color: white;
+  /*font-family: "Lucida Console", Monaco, monospace;*/
+    font-family: 'Bebas Neue';
+    -webkit-font-smoothing: antialiased;
 }
 .description p {
-  padding-top: 20px;
+  padding-top: 30px;
   text-align: center;
+  font-size: 20px;
 }
 /*END LINE ON SIDES*/
 
