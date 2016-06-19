@@ -1,4 +1,4 @@
-div(style="background-color:black;")
+div(style="background-color:black;padding-bottom:20px;padding-top:20%;")
 	.pname
 		h1.fancy 
 			span {{title1}}
@@ -17,5 +17,3 @@ div(style="background-color:black;")
 			carousel(interval="3000")
 				slide(ng-repeat="slide in slides2" active="slide.active")
 					img(ng-src="{{slide.image}}" style="margin:auto;")
-
-		hr

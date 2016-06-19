@@ -32,9 +32,22 @@ block content
 						a.btn.btn-lg.icon-customize(href="mailto:zhangkecyrus@gmail.com")
 							i.fa.fa-envelope
 			//- hr
-			.triangle-bottomleft
+			//- .triangle-bottomleft
+
+			.spaceblack.row
+				//- .col-md-12
+					#trigger1.spacer.s0
+					#animate1.box2.skin
+						p Ke is good
+				.col-md-12(style="padding-left:20px;")
+					h2
+						#trigger1.spacer.s0
+						#animate1.box2.skin
+							span(style="display:block;font-weight:100;font-size:100px;word-spacing:-25px;line-height:85%;color:white;") Ke Zhang
+							span(style="display:block;font-weight:300;font-size:145px;color:white;word-spacing:-25px;") WEB DESIGN
+							span(style="font-weight:700;font-size:155px;margin-top:6px;line-height:85%;word-spacing:-25px;color:white;") DEVELOPMENT
 			div(ng-view)
-			hr
+			//- hr
 		//- .foot
 		//- 	p(style="color:white") LEAVE THIS SPACE FOR FOOTER				
 block scripts
@@ -44,6 +57,15 @@ block scripts
 	script(src='/vendor/angular-route/angular-route.min.js')
 	script(src='/vendor/ui-bootstrap/ui-bootstrap-0.12.0.min.js')
 	script(src='/vendor/ui-bootstrap/ui-bootstrap-tpls-0.12.0.min.js')
+
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js")
+	script(src='/vendor/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js')
+	script(src='/vendor/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js')
+	script(src='/vendor/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js')
+
+	//- scroll magic
+	script(src='/javascripts/scrollmagic/myscrollmagic.js')
+
 
 	//- app
 	script(src='/javascripts/apps/Ke-app-module.js')
