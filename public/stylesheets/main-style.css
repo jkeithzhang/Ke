@@ -54,7 +54,7 @@ body {
   color: #aaa;
 }
 .navbar:hover {
-  background-color: #660033;
+  background-color: rgb(90,88,255);
 }
 nav .im-centered {
   width: 100%;
@@ -77,18 +77,36 @@ nav .im-centered .col-md-3 a:hover {
   margin-top: 60px;
   margin-bottom: 300px;
 }
-.triangle-bottomleft {
-  /*height: 500p;*/
-  /*position: fixed;*/
+.trianglefooter {
+  max-width: 60%;
+  z-index: 99;
+
+  border-bottom: 65px solid black;
+  border-left: 1000px solid transparent;
+  background-color: rgb(255, 227, 36);
+}
+.triangle-bottomright {
   max-width: 100%;
   z-index: 99;
   left: 0;
   right: 0;
-  border-bottom: 250px solid black;
-  border-right: 3000px solid transparent;
+  border-top: 250px solid black;
+  border-left: 3000px solid transparent;
+  background-color: #232323;
+  /*rgb(255, 227, 36)*/
+}
+.triangle-bottomleft {
+  max-width: 100%;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  border-bottom: 250px solid #3F8093;
+  border-left: 3000px solid transparent;
+  background-color: #232323;
 }
 .spaceblack {
-  padding-top: 12%;
+  padding-top: 10%;
+  padding-bottom: 20%;
   min-height: 600px;
   background-color: black;
   z-index: 99;
