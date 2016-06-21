@@ -10,9 +10,9 @@ var controller = new ScrollMagic.Controller();
 windowHeight = $(window).innerHeight();        
 
 new ScrollMagic.Scene({triggerElement: '#s2', 
-                 duration: windowHeight/4}
+                 duration: windowHeight/5}
                )
-                .setTween( TweenMax.to("span", 1, {ease: Linear.easeInOut, autoAlpha: 1, x:100, y:-100}) )
+                .setTween( TweenMax.to("span", 1, {ease: Linear.easeInOut, autoAlpha: 1, x:100, y:100}) )
                 .addTo(controller);
 
 // var scene2 = new ScrollMagic.Scene({

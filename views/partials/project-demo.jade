@@ -1,20 +1,32 @@
-div(style="background-color:#232323;padding-bottom:20px;padding-top:5%;")
+div(style="background-color:#232323;")
 	.pname
 		h1.fancy 
-			span {{title1}}
+			span {{title3}}
 	.border
-		div(style="height: auto")
+		div
 			carousel(interval="3000")
-				slide(ng-repeat="slide in slides1" active="slide.active")
+				slide(ng-repeat="slide in slides3" active="slide.active")
 					img(ng-src="{{slide.image}}" style="margin:auto;")
-
+		.row
+			.col-md-4.col-md-offset-4
+				p hello guys
 .triangle-bottomleft 
-div(style="background-color:#3F8093;padding-bottom:20px;padding-top:5%;")
+div(style="background-color:#3F8093;padding-bottom:20px;")
 	.pname
 		h1.fancy 
 			span {{title2}}
 	.border
-		div(style="height: auto")
+		div
 			carousel(interval="3000")
 				slide(ng-repeat="slide in slides2" active="slide.active")
+					img(ng-src="{{slide.image}}" style="margin:auto;")
+.triangle-bottomright2
+div(style="background-color:rgb(90,88,255);padding-bottom:20px;")
+	.pname
+		h1.fancy 
+			span {{title1}}
+	.border
+		div
+			carousel(interval="3000")
+				slide(ng-repeat="slide in slides1" active="slide.active")
 					img(ng-src="{{slide.image}}" style="margin:auto;")

@@ -33,6 +33,31 @@ angular.module('Ke-controller')
 					image: 'images/labook3.jpg'
 				}
 			];
+			//2nd project
+			$scope.title3 = "TS-HELPER";
+			$scope.slides3 = [
+				{
+					image: 'images/tsh1.jpg'
+				},
+				{
+					image: 'images/tsh2.jpg'
+				},
+				{
+					image: 'images/tsh3.jpg'
+				},
+				{
+					image: 'images/tsh4.jpg'
+				},
+				{
+					image: 'images/tsh5.jpg'
+				},
+				{
+					image: 'images/tsh6.jpg'
+				},
+				{
+					image: 'images/tsh7.jpg'
+				}
+			];
 		}
 	])
 	.controller('displayController', ['$scope',
