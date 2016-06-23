@@ -3,7 +3,7 @@ html {
 }
 .background-image {
   display: block;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/background.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../images/background.jpg');
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -32,10 +32,15 @@ body {
 .foot {
   background:rgba(0,0,0,0.6);
   width:100%;
-  height:75px;
-  position:absolute;
-  bottom:0;
+  height:100px;
   left:0;
+  padding: 2%;
+  border-top: black 1px solid;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+  background-color: #0B0021;
 }
 .navbar {
   background-color: rgba(0,0,0,0.6);
@@ -103,7 +108,7 @@ nav .im-centered .col-md-3 a:hover {
   right: 0;
   border-top: 250px solid #3F8093;
   border-left: 3000px solid transparent;
-  background-color: rgb(90,88,255);
+  background-color: rgb(64,20,112);
 }
 .triangle-bottomleft {
   max-width: 100%;
@@ -113,6 +118,13 @@ nav .im-centered .col-md-3 a:hover {
   border-bottom: 250px solid #3F8093;
   border-left: 3000px solid transparent;
   background-color: #232323;
+}
+.triangle-pagefooter {
+  max-width: 60%;
+  z-index: 99;
+  border-bottom: 265px solid black;
+  border-left: 7000px solid transparent;
+  background-color: rgb(64,20,112);
 }
 .spaceblack {
   padding-top: 10%;
@@ -172,7 +184,7 @@ hr {
   display: inline-block;
   position: relative;  
 }
-.fancy span:before, .fancy span:after {
+/*.fancy span:before, .fancy span:after {
   content: "";
   position: absolute;
   height: 5px;
@@ -187,20 +199,21 @@ hr {
 .fancy span:after {
   left: 100%;
   margin-left: 15px;
-}
+}*/
 .description {
   padding-top: 20px;
   font: 0.6em Serif;
   text-align: justify;
   color: white;
   /*font-family: "Lucida Console", Monaco, monospace;*/
-    font-family: 'Bebas Neue';
-    -webkit-font-smoothing: antialiased;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 .description p {
   padding-top: 30px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
 /*END LINE ON SIDES*/
 
