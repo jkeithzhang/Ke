@@ -3,34 +3,59 @@ div(style="background-color:#232323;padding-bottom:5px;")
 	.pname
 		h1.fancy 
 			span {{title3}}&nbsp;
-				a(href="#")
-					i.fa.fa-question-circle
+				span.wrapper
+					i.fa.fa-external-link.project-intro
+					.tooltip 
+						a(href="https://tshelper.alcatel-lucent.com/ts-helper/public" target="_blank") click to access ts-helper
 	.border
 		div
 			carousel(interval="3000")
 				slide(ng-repeat="slide in slides3" active="slide.active")
 					img(ng-src="{{slide.image}}" style="margin:auto;")
+			.row.technical
+				.col-md-10.col-md-offset-1.project-description TS-Helper is a PHP web-based application used to trouble shooting the errors/failures captured on the router. TS-Helper has been sold as part of premium service package to many NOKIA customers like Comcast and Bell. It is also an on-going project that keeps having new customers buying and keeps gaining profits for the group.
+			.row.technical
+				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - Laravel
+				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - Javascript
+				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - Jquery
+				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - HighCharts
 .triangle-bottomleft 
 div(style="background-color:#3F8093;padding-bottom:5px;")
 	.pname
 		h1.fancy 
 			span {{title2}}&nbsp;
 				a(href="#")
-					i.fa.fa-question-circle
+					i.fa.fa-external-link.project-intro
+					.tooltip 
+						a(href="https://tshelper.alcatel-lucent.com/ts-helper/public" target="_blank") No
 	.border
 		div
 			carousel(interval="3000")
 				slide(ng-repeat="slide in slides2" active="slide.active")
 					img(ng-src="{{slide.image}}" style="margin:auto;")
+			.row.technical
+				.col-md-10.col-md-offset-1.project-description Labook (Lab booking tool) is an internal tool used for managing all the servers and nodes in the lab, the tool is able to remotely update the router login information after the node been booked, Labook also provides an integrated command line tool for users so that they can use the tool to remote connect to router when they don't have command line tool installed locally.
+			.row.technical
+				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - NodeJS
+				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - AngularJS
+				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - MongoDB
+				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - HighCharts
 .triangle-bottomright2
 div(style="background-color:rgb(64,20,112);padding-bottom:5px;")
 	.pname
 		h1.fancy 
 			span {{title1}}&nbsp;
 				a(href="#")
-					i.fa.fa-question-circle
+					i.fa.fa-question-circle.project-intro
 	.border
 		div
 			carousel(interval="3000")
 				slide(ng-repeat="slide in slides1" active="slide.active")
 					img(ng-src="{{slide.image}}" style="margin:auto;")
+			.row.technical
+				.col-md-10.col-md-offset-1.project-description Ventus is a bilingual web-based end-to-end suite built to optimize the workflows of those working with clients in an educational environment, used university-wide by staff, students, and professors. I was part of the development team and working on the inventory module of Ventus during the CO-OP term in University of Ottawa.
+			.row.technical
+				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - PHP
+				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - Jquery
+				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - MVC
+				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - CSS
