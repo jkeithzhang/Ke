@@ -4,9 +4,10 @@ div(style="background-color:#232323;padding-bottom:5px;")
 		h1.fancy 
 			span {{title3}}&nbsp;
 				span.wrapper
-					i.fa.fa-external-link.project-intro
+					a(href="https://tshelper.alcatel-lucent.com/ts-helper/public" target="_blank")
+						i.fa.fa-external-link.project-intro
 					.tooltip 
-						a(href="https://tshelper.alcatel-lucent.com/ts-helper/public" target="_blank") click to access ts-helper
+						p Go to TS-Helper
 	.border
 		div
 			carousel(interval="3000")
@@ -24,17 +25,18 @@ div(style="background-color:#3F8093;padding-bottom:5px;")
 	.pname
 		h1.fancy 
 			span {{title2}}&nbsp;
-				a(href="#")
-					i.fa.fa-external-link.project-intro
+				span.wrapper
+					a(href="/" target="_blank")
+						i.fa.fa-external-link.project-intro
 					.tooltip 
-						a(href="https://tshelper.alcatel-lucent.com/ts-helper/public" target="_blank") No
+						p Go to Labook
 	.border
 		div
 			carousel(interval="3000")
 				slide(ng-repeat="slide in slides2" active="slide.active")
 					img(ng-src="{{slide.image}}" style="margin:auto;")
 			.row.technical
-				.col-md-10.col-md-offset-1.project-description Labook (Lab booking tool) is an internal tool used for managing all the servers and nodes in the lab, the tool is able to remotely update the router login information after the node been booked, Labook also provides an integrated command line tool for users so that they can use the tool to remote connect to router when they don't have command line tool installed locally.
+				.col-md-10.col-md-offset-1.project-description Labook (Lab booking tool) is an internal tool used for managing all the servers and nodes in the lab, the tool is able to remotely update the router login information after the node been booked, released, etc. Labook also provides an integrated command line tool for users so that they can use the tool to remote connect to router when they don't have command line tool installed locally.
 			.row.technical
 				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - NodeJS
 				span.col-md-3(style="text-align:center;color:#aaa;font-weight:bold;") - AngularJS
